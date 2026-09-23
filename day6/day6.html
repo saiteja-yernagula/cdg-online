@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    forms
+    forms are used to collect information from the user
+    and allowing user to submit data to the server
+
+    signup,login ,registration,contact 
+
+    forms are defined with form tag
+    form attributes
+    
+    form fields are defined with input tag
+
+    input -type will control the input tag
+    label- it wil provide the information about an input tag
+
+    attributes
+    for and id - it was used to connect the label to the 
+                input
+    placeholder- it will provide the hint about an input
+    name- it will carry data to server in key value pairs
+    required- it specifies that a form field must be filled
+    value-it will provide the pre defined value
+
+    form 
+    
+    method="GET"
+    method="POST"--secured way of transfering the data -passwords,credit card,user imp
+    
+    action
+    it will specifies where the data should be submitted
+
+    action='www.google.com'
+
+    formsubmitco - it is a platform - link your form to your mail
+   
+
+    1) how to integrate formsubmit co
+    2) complete that form
+
+      -->
+    <form action='form.html' method="POST">
+     <label for="nm">Enter your name: </label>
+     <input value="" id="nm" placeholder="name" name="un" type="text"> <br>
+     <label for="pd">Enter Your Password: </label>
+     <input id="pd" placeholder="enter password" name="pw"  type="password"><br>
+
+
+     email
+     <input type="email"> <br>
+     mobile number
+     <input type="text" maxlength="10"> <br>
+     qty
+     <input type="number" min="3" max="5">  <br>
+     upload your resume
+     <input type="file"> <br>
+     book your interview date
+     <input type="date"> <br>
+     book your slot
+     <input type="datetime-local"> <br>
+     generate weekly reports
+     <input type="week"><br>
+     generate monthly reports
+     <input type="month"><br>
+
+     search for your product
+     <input type="search"> <br>
+     rate yourself
+     <input type="range"> <br>
+     <input type="color">
+     upload your linkedin url
+     <input type="url" > <br>
+     <input type="submit">
+     <input type="reset">
+     <button type="submit">login</button>
+    </form>
+
+
+    <form action="" method="POST">
+        Enter your tech stack <br>
+        <input type="radio" id="py" name="stack" value="python"> 
+        <label for="py">python stack</label> 
+        <input type="radio" id="j" name="stack" value="java">
+        <label for="j">java stack</label>
+        <input type="radio" id="mr" name="stack" value="mern">
+        <label for="mr">mern stack</label> <br>
+
+        select your skills <br>
+        <input type="checkbox" id="htm" name="skills" value="html">
+        <label for="htm">html</label>
+        <input type="checkbox" id="cs"  name="skills" value="css">
+        <label for="cs">css</label>
+        <input type="checkbox" id="js"  name="skills" value="js">
+        <label for="js">js</label>
+<br>
+        Enter feedback <br>
+        <textarea  rows="10" cols="10" name="" id=""></textarea>
+
+
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

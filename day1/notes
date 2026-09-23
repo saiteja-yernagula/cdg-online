@@ -1,0 +1,89 @@
+Html
+git
+css
+bootstrap
+
+
+html - hypertext markup language
+
+hypertext - a text refers to another text
+markup - a set of rules that defines how content should be displayed on the 
+         browser
+
+it is a standard markup language that is used to create structure for a webpages
+it acts as a skeleton 
+it contains series of elements that are represented by tags
+
+
+tag
+<reserved word>
+
+
+open tag    closing tag
+<resword>    </resword>
+
+
+element -it is a combination of open tag +conten + closing tag
+heading
+<h1>my first webpage</h1>
+
+
+1) create a file with .html extension 
+2) <h1>my first webpage</h1>
+3) run the server
+
+
+
+vs code 
+how to open a project
+
+1) through the file- open folder
+
+
+
+
+extensions
+1) live server
+2) live preview
+3) prettier
+4) es7+ react
+
+
+
+basic structure of html 
+<!DOCTYPE html>---declaration- it tell the type of the document and version(5)
+root element - which contains everything - head and body
+<html>
+  head tag
+  it contains meta data ,title,third party links
+  <head>
+   <title>website name</title>
+    
+  </head>
+  <body>
+    will write the actual content
+  </body>
+
+
+</html>
+
+
+
+
+
+type of tags
+1) heading tags
+
+h1- h6
+h1-largest heading
+h2
+h3
+h4
+h5
+h6 -smallest heading
+2) paragraph tags
+it is used to define the paragraph content 
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus sunt recusandae ipsum distinctio vel temporibus pariatur consequatur iste non? Explicabo nemo maiores nostrum officia eveniet vero mollitia esse, sequi deleniti.</p>
+
+
+
