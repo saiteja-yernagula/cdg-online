@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <style>
+      /* 
+       css - cascading stylesheet 
+    cascading - flowing 
+    styles-  propertis
+    sheet- doc
+
+    css is a styling language used to describe the presentaion
+    of a web page 
+    it deals with the text ,colors,backgrounds,animations
+    ,layouts and responsiveness
+
+
+    how to insert css
+    1) inline css
+    styles are embebeded using style attribute within the tag
+ <h1 style="background:lightseagreenc">Heading</h1>
+
+    2) internal css
+    styles are added to the document using  style tags in head section
+    <style>
+        //selectors are used to target the html elements
+      h2{
+            color:red;
+        }
+    </ style>
+
+    3) external css
+    style are defined in a separate file .css
+    styles are added to the document using link tag in head section
+    <link rel="stylesheet" href="demo.css">
+
+    demo.css
+    h3{
+    background:lightblue;
+    }
+
+
+    h1-inline-internal -external
+    inline having high priority
+    internal and external -it depends how we write
+
+    selectors
+    1) simple selectors
+       a) element selector or tag selector
+          h1{
+          color:red;
+          }
+        b) class selector 
+        it targets the html based on classname
+        it is used to apply the styles for multiple elements 
+        it is denoted by .
+        classname can be multiple
+
+        .demo{
+        color:pink
+        }
+        <h1 class='demo demo2 demo3 '>contetn</h1>
+
+        c) id selector
+        it targets the html based on idname but uniquely
+        it is denoted by #
+
+       #el{
+        color:pink
+        }
+        <h1 id='el'>contetn</h1>
+
+
+        *{
+        color:yellow;
+        }
+
+    2) combinators
+    3) pseudo class
+    4) pseudo element
+    5) attribut selectors
+
+
+
+    specificity
+    1)  id
+    2) classname
+    3) tag
+
+
+    box model
+    it describes the presentation of a element
+    four components
+    1) content
+      it holds width and height 
+      
+    2) paddding
+    it is space inside of the element
+    padding:10px 
+    padding: 5px 10px 20px 30px;
+            top  right bottom left;
+     padding: 5px  20px 30px;
+           top   rigt/lef  bottom;
+    padding: 10px 20px;
+            t/b   r/l
+    3) border
+    border: 1px solid red;c
+            width style color
+
+    border styles
+    solid
+    double
+    dotted
+    dashed
+    ridge 
+    groove
+    inset 
+    outset
+    none
+
+
+    4) margin
+    it is the space around an element
+
+      margin:10px 
+    margin: 5px 10px 20px 30px;
+            top  right bottom left;
+     margin: 5px  20px 30px;
+           top   rigt/lef  bottom;
+    margin: 10px 20px;
+            t/b   r/l
+div{
+      width:200px;
+      height:200px;
+      
+
+      }
+ */
+
+    
+       .demo{
+        color:black;
+       }
+       .be{
+        background:darkred;
+       }
+         .fe{
+        background:violet;
+        color:white;
+       }
+       #el{
+        color:#558000;
+       }
+      
+       
+        div{
+        background:yellow;
+        width:200px;
+        height:300px;
+        padding:20px;
+         padding: 5px 10px 20px 30px;
+         padding: 5px  20px 30px;
+         padding: 5px   30px;
+         border:4px solid red;
+         border:4px double red;
+         border:4px dashed red;
+         border:4px dotted red;
+         border:4px ridge red;
+         border:4px groove red;
+         border:4px inset red;
+         border:4px outset red;
+         border-radius:50%;
+         border-radius:20px;
+         margin:20px;
+         margin:10px 20px 30px 40px;
+         margin:10px  30px 40px;
+         margin:10px   40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div >content</div>
+
+    <div >content</div>
+    
+    <h1 class="fe demo">HTML</h1>
+    <h2 class="fe">css</h2>
+    <h3 class="fe">js</h3>
+    <h1 class="be">Python</h1>
+    <h2 class="be">java</h2>
+    <h3 class="be" id="el">flask</h3>
+</body>
+</html>
