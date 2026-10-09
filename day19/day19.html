@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="clc('1')">1</button>
+    <button onclick="clc('2')">2</button>
+    <button onclick="clc('3')">2</button>
+    <button onclick="clc('4')">4</button>
+    <button onclick="clc('5')">5</button>
+    <button onclick="clc('-')">-</button>
+    <button onclick="clc('+')">+</button>
+    <button onclick="calc()">calculaate</button>
+    <script>
+      /*
+    break 
+    it is used to terminate the loop
+
+    continue
+    it is used to skip the current iteration and moves control 
+
+    let password = "admin123";
+    let count = 0;
+    while (true) {
+        let inp = prompt("enter ur password");
+        if (inp == password) {
+          console.log("welcome to banking page");
+          break;
+        }
+        count++;
+        if (count == 3) {
+          console.log("card is blocked for nexxt 24hours");
+          break;
+        }
+      }
+      
+      let products=[
+        {productid:243,status:'expired'},
+        {productid:2423,status:'not expired'},
+        {productid:2463,status:'expired'},
+        {productid:2493,status:'not expired'},
+        {productid:2343,status:'expired'},
+      ]
+
+      for (let i of products){
+        if(i.status=='expired'){
+          continue
+        }
+        console.log(i)
+      }
+
+      functions 
+      it is block of reusable code that is used to specific task when
+      something invokes it
+
+      functions are defined with function keywordd followed by function name
+      followed by () followed by block of code
+
+      paranthesis may container parameters
+      parameters are like variable name
+
+      and argument are passed to the function while calling
+
+      
+      //function declaration- static 
+      function greet(){
+        console.log('hello dear welcome to the page')
+      }
+      //invoking or calling
+      greet()
+      greet()
+   
+      //function declaration- dynamic 
+      function greet2(name){
+        console.log(`hello ${name} welcome to the page`)
+      }
+      //invoking or calling
+      greet2('john')
+      greet2('jessy')
+
+
+      let box=''
+      
+      function clc(val){
+        console.log(val)
+        box+=val
+        console.log(box)
+      }
+      function calc(){
+        console.log('total is',eval(box))
+        
+      }
+
+
+      points to remember
+      1) function name stores function defintion
+      2) logging off the calling will give you the return value
+      3) statement after function will not be executed because it was in void
+      4)  named functions can only be hoisted
+
+      return 
+      it is used to store the end value-
+      it is used to terminate the func
+      */
+     
+     function greet(){
+       console.log('hello ')
+       return 'hi world'
+       console.log('hey dear')
+      }
+      
+      greet()//calling
+    console.log(greet)//defintion
+     console.log(greet())//function calling + return value
+      </script>
+  </body>
+</html>
