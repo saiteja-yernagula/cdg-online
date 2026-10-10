@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        
+        types of functions
+        1) named function- hoisting
+        
+        greet()
+        function greet(){
+        console.log('hello welcome to the page')
+        }
+        2) anonymous function
+        it is a function that defined without a function name
+        let a= function (){
+        console.log('hello welcome to the page')
+        }
+        a()
+        3) arrow function
+        it is a more concise way of writing a function with simple syntax
+        function sum(a,b){
+         return a+b
+         }
+         console.log(sum(1,2))
+
+         let sum= (a,b)=>{
+         return a+b
+         }
+         we can eliminate {} and return-it will automatically take return
+         let sum=(a,b)=>a+b
+         console.log(sum(1,2))
+
+         we can eliminate paranthesis if there is a single param
+         let sum=a=>a+a
+         console.log(sum(2))
+
+        4) self invoking function
+        when a function call itself or as soon as it is defined
+        (declarton)()
+
+        (function(){
+        console.log('hello world');
+        })()
+
+        5) callback functions 
+        callbacck function is when a function definition is passed to another function
+        as a argument and later execcutes in outer function 
+        */ 
+
+      
+        // let a= function (){
+        // console.log('hello welcome to the page')
+        // }
+        // a()
+
+        // let sum=a=>a+a;
+        // console.log(sum(2))
+
+        //  (function(){
+        //   console.log('helo')
+        // })()
+
+        // function cart(callback){
+        //     console.log('products added to cart')
+        //     callback(order)
+        // }
+        // function payment(callback){
+        //     console.log('payment complted')
+        //     callback()
+        // }
+        // function order(){
+        //     console.log('order placed')
+        // }
+        // cart(payment)
+
+        // closure 
+        // when an inner function having a access and can control  the variable
+        //  which is declared  in outer funcion  even after execution of outer func
+        function outer(){
+            let c=0
+            console.log('outer fun is executed')
+            return function(){
+                c++
+                console.log('inner function is executed')
+                console.log(c)
+            }
+        }
+        let a=outer()
+        a()//1
+        a()//2
+       
+
+        // outer()()1
+        // outer()()1
+    </script>
+</body>
+</html>
